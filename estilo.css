@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 300;
+    margin: 20px;
+    background-color: #ffffff;
+    background: url('fondo.jpg');
+    
+}
+
+nav {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 800;
+    color: black;
+    background-color: rgb(244, 77, 177);
+    height: 19vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 8vw;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.2s;
+   
+}
+
+nav a {
+    
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s;
+        margin-right: 20px; 
+        padding: 0 10px; 
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(255, 0, 208);
+}
+
+header {
+
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8.33vw;
+    margin-top: 20px;
+}
+
+header h3 {
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 1000;
+    font-size: 100px;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    margin-bottom: 40px;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 100;
+    display: contents;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 50px;
+    transition: all 0.3s;
+}
+
+header h1:hover {
+    color: #000;
+    border-color: black;
+    letter-spacing: 3px;
+}
+
+header p {
+    font-size: 20px;
+    line-height: 1.5;
+    animation-name: slide-up;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header #contacto {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.2s;
+    margin-top: 20px;
+    display: inline-block; 
+    width: 150px; 
+    text-align: center; 
+}
+
+header #contacto:hover {
+
+    background-color: rgb(244, 189, 235);
+    color: black;
+}
+
+main {
+    width: 100%;
+    padding: 0 8vw;
+  
+    
+}
+
+section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+section div {
+    width: 48%;
+    margin-bottom: 20px;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+section div h2 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+section div img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s ease-out;
+}
+
+section div img:hover {
+    transform: scale(0.95);
+}
+
+video {
+    width: 50%;
+    filter: brightness(1) contrast(1);
+    
+}
+
+footer {
+    margin-top: 50px;
+    height: 150px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8vw;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    background: linear-gradient(to right, #ffffff,  rgb(240, 74, 149)); 
+    margin-top: 10px ;
+}
